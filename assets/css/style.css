@@ -1,0 +1,309 @@
+/* @import "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap"; */
+/* @import "https://api.fontshare.com/v2/css?f[]=stardom@400&display=swap"; */
+@import "https://api.fontshare.com/v2/css?f[]=clash-display@200&display=swap";
+
+
+
+/*--------------------------------------------Global*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------Heading*/
+header {
+    margin: 0;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    padding: 0 0 0 5px;
+   /*  font-family: 'Bebas Neue', Courier, monospace; */
+    /* font-family: 'Stardom', Courier, monospace; */
+    font-family: 'Clash Display', sans-serif;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #6E9887;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(103, 0, 183)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.btn {
+    border: 2px solid #6E9887;
+    background-color: black;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #6E9887;
+    color: #6E9887;
+}
+
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    margin-left: auto; 
+  } */
+
+.btn:hover {
+    background-color: #6E9887;
+    color: black;
+}
+
+a#navbar.navbar-brand {
+    color: #9a00cc;
+}
+
+a#navbar.navbar-brand:hover {
+    color: #6E9887;
+}
+
+a.nav-link {
+    color: #6E9887 !important;
+}
+
+a.nav-link:hover {
+    color: #9a00cc !important;
+}
+
+/*--------------------------------------------Body*/
+body {
+   background: black;
+}
+
+.bg-img {
+    background-image: url('../images/about.jpg');
+    background-size: cover;
+
+}
+
+ .maintxt {
+    padding-right:100px;
+    display:flex;
+    justify-content:end;
+    align-items: center;
+    height: 100vh;
+ }
+
+ .h1-larger {
+    font-size: 80px
+}
+
+.project-img-top {
+    object-position: -70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   /*  font-family: 'Stardom', Courier, monospace; */
+    font-family: 'Clash Display', sans-serif;
+    color: #6E9887;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: #9a00cc;
+    margin: 0;
+}
+
+.intro-text {
+    padding: 5em 4em 0 4em;
+    max-width: 40%;
+}
+
+.yellow {
+    color: #9a00cc;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 3em;
+    position: relative;
+    color: #9a00cc;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #9a00cc;
+}
+
+.about-text {
+    max-width: 95%;
+}
+
+.thanks {
+    padding-top: 200px;
+}
+
+.back-link {
+    padding-bottom: 250px;
+}
+
+a:hover {
+    color: #9a00cc;
+}
+
+.center-form {
+    max-width: 55%;
+    margin: 0 auto;
+}
+
+/*--------------------------------------------Footer*/
+.fa-cv {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #9a00cc;
+    transition: all 0.15s ease-in-out;
+}
+
+.fa-cv:hover {
+    color: #6E9887;
+}
+
+.fa-links li a i {
+    width: 40px;
+    height: 40px;
+    padding: 16px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 9px;
+    text-align: center;
+    color: white;
+    background: #9a00cc;
+    transition: all 0.15s ease-in-out;
+}
+
+.fa-links li a i:hover {
+    background: #6E9887;
+}
+
+/*--------------------------------------------Media Queries*/
+/* When the browser is at least 992px and above */
+@media(max-width: 992px) {
+    .about-text {
+        padding: 50px 5px 0 5px;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media(max-width: 992px) {
+    .intro-text {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 992px) {
+    .center-form {
+        max-width: 90%
+    }
+}
+
+
+/* When the browser is at least 419px and above */
+@media(max-width: 419px) {
+    .about-img {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}
+
+
+/* When the browser is at least 418px and above */
+@media(max-width: 418px) {
+    .navbar-brand {
+        font-size: 30px;
+        padding: 0;
+       /*  font-family: 'Stardom', Courier, monospace; */
+       font-family: 'Clash Display', sans-serif;
+        }
+    }
+
+/* @media(max-width: 514px) {
+    .maintxt {
+        padding: 0;
+        display:flex;
+        justify-content:end;
+        align-items: center;
+        height: 100vh;
+    }
+  
+    .h1-larger {
+        font-size: 50px
+    }
+} */
+/* For screens 848px and below */
+@media (max-width: 900px) {
+    .col-md-6{
+        /* Remove the offset */
+        margin-left: 0;
+    }
+
+    /* Make the column take up full width */
+    .col-12 {
+        width: 100%;
+    }
+
+    /* Adjust the text size and padding */
+    .maintxt {
+        padding-right: 0px; /* Reduce the padding to avoid cutoff */
+    }
+
+    .h1-larger {
+        font-size: 65px; /* Adjust the font size for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
